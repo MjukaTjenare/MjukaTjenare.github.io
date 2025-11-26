@@ -1,0 +1,127 @@
+/* CSS Assignment 1 - styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 32px;
+    color: #0d19ba;
+    text-align: center;
+    margin: 10px 0;
+}
+
+form {
+    background-color: #81c5ea;
+    border: 1px solid #1155e7;
+    padding: 15px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 8px;
+}
+
+p {
+    font-size: 14px;
+    color: #130909;
+    margin: 6px 11px 4px 9px;
+}
+
+.form-section {
+    background-color: #f3e5f5;
+    padding: 6px 10px 5px 12px; 
+    border-radius: 6px;
+    margin-top: 20px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    min-width: 300px;
+    max-width: 900px;
+    min-height: 200px;
+    max-height: 1000px;
+    overflow: auto;
+    border: 2px solid #db0d0d;
+    border-radius: 10px;
+}
+
+/* ID selectors */
+
+#main-title {
+    font-size: 36px;
+    color: #141629;
+    background-color: #e8eaf6;
+    text-align: center;
+}
+
+
+.green.bold {
+    color: green;
+    font-weight: bold;
+}
+
+
+input[type*="text"] {
+    border: 1px solid #4a148c;
+    padding: 8px;
+    width: 100%;
+}
+
+img[src*='winter'] {
+    border: 3px solid lightblue;
+    opacity: 0.9;
+}
+
+
+.form label {
+    font-size: 14px;
+    color: #333;
+}
+
+.main-list li {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+
+h1, h2, .menu {
+    font-family: Arial, sans-serif;
+    color: #2332d8 !important; 
+    /* override styles */
+}
+
+
+h1.title {
+    background-image: linear-gradient(to right, #b5091d, #d61313);
+    color: white;
+    padding: 10px;
+}
+
+
+a:hover {
+    color: #d00f0f;
+}
+input:focus {
+    border-color: #7b1fa2;
+    outline: none;
+}
+input:disabled {
+    background-color: #eee;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    min-width: 300px;
+    max-width: 900px;
+    min-height: 200px;
+    max-height: 1000px;
+    overflow: auto;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+
+.hidden-logo {
+    visibility: hidden; 
+    /* This is a visibility property used to hide an element */
+}

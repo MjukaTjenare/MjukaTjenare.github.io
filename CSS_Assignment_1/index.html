@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Laurea University - Job Application</title>
+   <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="styles.css">
+   
+
+  <!-- Basic inline CSS -->
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; background-color: #f9f9f9; }
+    header { background-color: #dbd9dc; color: white; text-align: center; }
+    nav a { margin: 0 15px; color: #2725b0; }
+    .form-section { background-color: #fff; border: 1px solid #ccc; padding: 15px; }
+    input, select, textarea { width: 100%; padding: 8px; }
+    footer { background-color: #1a9bdc; color: white; text-align: center; } 
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Laurea University of Applied Sciences</h1>
+      <nav>
+        <a href="#application">Application Form</a>
+        <a href="#quote">Quote</a>
+        <a href="#media">Media</a>
+      </nav>
+  </header>
+
+  <!-- Main Section -->
+  <main></main>
+  <section id="application" class="form-section">
+    <article>
+      <h2>Job Application Form</h2>
+      <!-- Job Application Form -->
+      <form action="/submit" method="POST" autocomplete="on">
+
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required minlength="2" maxlength="50">
+
+       
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email" placeholder="Enter your email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+        
+          <label for="password">Create Password:</label>
+          <input type="password" id="password" name="password" required>
+
+          <label for="experience">Years of Experience:</label>
+          <input type="number" id="experience" name="experience" min="0" max="40">
+      
+          <label for="salary">Expected Salary Range:</label>
+          <input type="range" id="salary" name="salary" min="3000" max="150000" step="500">
+
+          <label>Preferences:</label>
+          <input type="checkbox" id="remote" name="preferences" value="remote"> Remote Work<br>
+          <input type="checkbox" id="Hybrid" name="preferences" value="fulltime"> Hybrid<br>
+          <input type="checkbox" id="travel" name="preferences" value="travel"> Willing to Travel
+
+          <label>Job Type:</label>
+          <input type="radio" id="ft" name="jobtype" value="fulltime"> Full-Time
+          <input type="radio" id="pt" name="jobtype" value="parttime"> Part-Time
+
+          <label for="position">Position Applying For:</label>
+          <select id="position" name="position">
+            <option value="developer">Software Developer</option>
+            <option value="analyst">Business Analyst</option>
+            <option value="designer">UI/UX Designer</option>
+            <option value="manager">Project Manager</option>
+          </select>
+
+          <label for="city">Preferred City:</label>
+          <input list="cities" id="city" name="city" placeholder="Start typing...">
+          <datalist id="cities">
+            <option value="Helsinki">
+            <option value="Espoo">
+            <option value="Tampere">
+            <option value="Turku">
+          </datalist>
+
+          <label for="coverletter">Cover Letter:</label>
+          <textarea id="coverletter" name="coverletter" rows="5" cols="40" placeholder="Write your cover letter here..."></textarea>
+      
+        <div class="form-group">
+          <label for="disabled">Disabled Field:</label>
+          <input type="text" id="disabled" value="Disabled Example" disabled>
+        </div>
+
+        <div class="form-group">
+          <label for="readonly">Readonly Field:</label>
+          <input type="text" id="readonly" value="Readonly Example" readonly>
+        </div>
+
+        <div class="form-group">
+          <input type="submit" value="Send">
+        </div>
+      </form>
+    </article>
+  </section>
+
+  <aside>
+    <blockquote id="quote">
+      "The future belongs to those who believe in the beauty of their dreams." – Eleanor Roosevelt
+    </blockquote>
+  </aside>
+
+  <section id="media">
+    
+    <article>
+      <h2>About Laurea University</h2>
+      
+      <figure>
+        <img src="https://www.laurea.fi/globalassets/logot/laurea/neliotunnus_laurea_rgb.png" alt="Laurea University Logo" width="200">
+        <figcaption>Laurea University of Applied Sciences</figcaption>
+      </figure><br>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1981.465142512671!2d24.802030477850984!3d60.222680439194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468df67d9b306011%3A0x3d5f1903758ff53d!2sLaurea%20Lepp%C3%A4vaaran%20kampus!5e0!3m2!1sen!2sfi!4v1763134272960!5m2!1sen!2sfi" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </article>
+  
+  <!-- Footer -->
+  <footer id="contact">
+    <p>Contact us at careers@laurea.fi | Phone: +358 123 456 789</p>
+    <p>&copy; 2025 Laurea Careers</p>
+  </footer>
+</body>
+</html>
