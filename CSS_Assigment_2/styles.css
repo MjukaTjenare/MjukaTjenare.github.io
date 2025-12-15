@@ -1,0 +1,93 @@
+/* General Reset */
+body {
+  margin: 0;
+  font-family: 'Roboto', Arial, sans-serif; /* font-family with fallback */
+  line-height: 1.6; 
+  background-color: #f4f4f4;
+}
+
+/* Navigation bar */
+.navbar {
+  position: fixed; /* fixed positioning */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 255, 0.8); 
+  z-index: 1000; 
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.navbar li {
+  display: inline; /* inline display for nav links */
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: white;
+  text-transform: uppercase; /* text-transform requirement */
+  letter-spacing: 2px; 
+  font-weight: bold; 
+}
+
+/* Hero section */
+.hero {
+  margin-top: 60px;
+  text-align: center; /* text-align requirement */
+  color: hsl(120, 60%, 30%); /* HSL color */
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif; /* custom Google font */
+  font-style: italic; 
+  font-weight: 700; 
+}
+
+/* Gallery layout */
+.gallery {
+  display: flex; /* flexbox for gallery layout */
+  flex-wrap: wrap; 
+  margin: 20px;
+}
+
+.art {
+  display: inline-block; 
+  margin: 10px;
+  width: 30%;
+}
+
+.art img {
+  width: 100%;
+  border: 5px solid #A52A2A; 
+}
+
+/* Clear floats */
+footer {
+  clear: both; /* clear requirement */
+  text-align: center;
+  background-color: rgb(255, 0, 0); 
+  color: white;
+  padding: 10px;
+}
+
+/* Positioning examples */
+.relative-art {
+  position: relative; /* relative positioning */
+  top: 10px;
+}
+
+.absolute-art {
+  position: absolute; /* absolute positioning */
+  top: 200px;
+  left: 50px;
+}
+
+.sticky-art {
+  position: sticky; /* sticky positioning */
+  top: 100px;
+}
