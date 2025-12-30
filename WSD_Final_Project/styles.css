@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #0d6efd, #6610f2);
+    color: white;
+    padding: 120px 0;
+}
+
+/* Section Titles */
+.section-title {
+    margin-bottom: 40px;
+}
+
+/* Card Hover Effect */
+.custom-card {
+    transition: transform 0.3s ease;
+}
+.custom-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
+    background: #f8f9fa;
+    padding: 30px 0;
+}
+
+/* Navbar brand spacing fix */
+.navbar-brand {
+    font-weight: bold;
+}
+
+/* LinkedIn Icon */
+.social-icon {
+    width: 28px;
+    height: 28px;
+    margin-left: 10px;
+    margin-top: 6px;
+    align-self: center;
+}
